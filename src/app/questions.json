@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "text": "When you are in a social setting, how do you usually feel?",
+    "options": [
+      {
+        "value": "A",
+        "content": "Energized and excited",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "Comfortable but prefer small groups",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "Neutral, it depends on the people around",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "Drained and in need of alone time",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "How do you handle conflict?",
+    "options": [
+      {
+        "value": "A",
+        "content": "Address it head-on and openly",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "Try to resolve it diplomatically",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "Avoid it when possible",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "Withdraw and keep to myself",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "How do you prefer to spend your free time?",
+    "options": [
+      {
+        "value": "A",
+        "content": "Going out with friends or attending events",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "Having a mix of social and solitary activities",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "Engaging in solitary hobbies like reading or gardening",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "Spending quiet time alone, recharging",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "When working on a project, you prefer to:",
+    "options": [
+      {
+        "value": "A",
+        "content": "Collaborate with a team and share ideas",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "Work with a small group of trusted colleagues",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "Work independently but seek occasional input",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "Work alone, preferring to focus without interruptions",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "How do you recharge after a long day?",
+    "options": [
+      {
+        "value": "A",
+        "content": "Socializing or engaging in active pursuits",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "A combination of relaxing and talking to friends",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "Engaging in quiet hobbies like reading or drawing",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "Spending time alone, in a calm and quiet environment",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  }
+]
