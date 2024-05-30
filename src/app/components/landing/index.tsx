@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import {
   Button,
   FormControl,
+  FormErrorMessage,
   Flex,
   Heading,
   Input,
@@ -12,13 +13,15 @@ import {
 
 const LandingScreen: React.FC = () => {
   const [username, setUsername] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleStart = () => {
     if (username.trim()) {
+      setError("");
       navigate("/questions", { state: { username } });
     } else {
-      alert("Please enter your name.");
+      setError("Please enter your name.");
     }
   };
 
@@ -37,14 +40,20 @@ const LandingScreen: React.FC = () => {
         <Heading lineHeight={1.1} fontSize={{ base: "2xl", md: "3xl" }}>
           Enter Name To Start Test
         </Heading>
-        <FormControl id="email">
+        <FormControl id="username" isInvalid={!!error}>
           <Input
             _placeholder={{ color: "gray.500" }}
             type="text"
             placeholder="Enter your name"
             value={username}
-            onChange={(e: { target: { value: React.SetStateAction<string>; }; }) => setUsername(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+              setUsername(e.target.value);
+              if (e.target.value.trim()) {
+                setError("");
+              }
+            }}
           />
+          <FormErrorMessage>{error}</FormErrorMessage>
         </FormControl>
         <Stack spacing={6}>
           <Button
