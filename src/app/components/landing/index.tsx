@@ -43,7 +43,7 @@ const LandingScreen: React.FC = () => {
             type="text"
             placeholder="Enter your name"
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={(e: { target: { value: React.SetStateAction<string>; }; }) => setUsername(e.target.value)}
           />
         </FormControl>
         <Stack spacing={6}>

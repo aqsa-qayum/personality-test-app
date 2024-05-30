@@ -13,10 +13,8 @@ const ResultScreen: React.FC = () => {
       alignItems="center"
       justifyContent="center"
       minHeight="100vh"
-      bg="gray.100" // Set background color for the page
     >
       <Box
-        bg="white" // Set background color for the card
         p={8}
         borderRadius="md"
         boxShadow="lg"
@@ -25,16 +23,20 @@ const ResultScreen: React.FC = () => {
         textAlign="center"
       >
         <Heading
-          fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+          fontWeight={300}
+          fontSize={{ base: "2xl", sm: "2xl", md: "3xl" }}
           lineHeight={"110%"}
           mb={4}
         >
           Your Personality Trait
         </Heading>
-        <Text color={"gray.500"} fontSize={"3xl"} mb={6}>
-          {username}, you are an {trait}.
-        </Text>
+        <Box justifyContent={"center"} display={"flex"}>
+        <Text color={"gray.500"} fontSize={"3xl"} mb={6} mr={2}>
+          {username}, you are an
+          </Text>
+          <Text fontSize={"3xl"} mb={6}>{trait}.</Text>
+        </Box>
+        
         <Button
           colorScheme="blue"
           bg="blue.400"

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import questionsData from "../../questions.json";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, VStack } from "@chakra-ui/react";
 import QuestionControls from "./questionControls";
 import QuestionIndex from "./questionIndex";
 import QuestionStatement from "./questionStatement";
@@ -89,24 +89,17 @@ const QuestionScreen: React.FC = () => {
 
   return (
     <>
-      <Box
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        minHeight="100vh"
-        bg="gray.100 !important"
-      >
+      <VStack spacing={8} align="center" justify="center" minHeight="100vh">
+      <Heading as="h2" size="lg" mb={4}>
+        See if you are an extrovert or introvert?
+      </Heading>
         <Box
-          bg="white"
           p={8}
           borderRadius="md"
           boxShadow="lg"
           maxW="600px"
           width="100%"
         >
-          <Heading as="h2" size="lg" mb={4}>
-            See if you are an extrovert or introvert?
-          </Heading>
           <QuestionIndex
             currentQuestionIndex={currentQuestionIndex}
             totalQuestions={questions.length}
@@ -123,7 +116,7 @@ const QuestionScreen: React.FC = () => {
             handleNext={handleNext}
           />
         </Box>
-      </Box>
+        </VStack>
     </>
   );
 };
