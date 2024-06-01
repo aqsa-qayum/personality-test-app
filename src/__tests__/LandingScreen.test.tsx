@@ -33,8 +33,7 @@ describe("LandingScreen", () => {
     expect(button).toBeInTheDocument();
   });
 
-  test("shows alert when start button is clicked without entering a name", () => {
-    jest.spyOn(window, "alert").mockImplementation(() => {});
+  test("shows error message when start button is clicked without entering a name", () => {
     render(
       <MemoryRouter>
         <LandingScreen />
@@ -42,7 +41,8 @@ describe("LandingScreen", () => {
     );
     const button = screen.getByRole("button", { name: /Start/i });
     fireEvent.click(button);
-    expect(window.alert).toHaveBeenCalledWith("Please enter your name.");
+    const errorMessage = screen.getByText("Please enter your name.");
+    expect(errorMessage).toBeInTheDocument();
   });
 });
 
